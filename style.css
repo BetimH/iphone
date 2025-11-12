@@ -1,0 +1,138 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    font-family: poppins, sans-serif !important;
+}
+.navbar{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    border-radius: 15px;
+}
+.nav-link{
+  color: black  !important;
+  border-radius: 10px;
+}
+.nav-link:hover{
+   background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.5s ease all ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hero{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: darken; */
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.038) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none !important;
+}
+.card-header{
+    border: none !important;
+    background-color: transparent !important;
+}
+.analytics{
+ background-color:rgba(0, 0, 0, 0.038);
+}
+.dot{
+    vertical-align: middle;
+    color: #0018b4;
+}
+
+.site-footer{
+  position: relative;
+  color:#0a0a0a; /* you use light backgrounds; if you switch to dark body, flip colors */
+  background: radial-gradient(1200px 600px at 85% -10%, rgba(46,52,90,.18), transparent),
+              radial-gradient(900px 500px at -10% 110%, rgba(79,84,107,.16), transparent);
+  padding-top: 4rem;
+}
+
+.footer-card{
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-stroke);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.footer-title{
+  letter-spacing:.5px;
+  text-transform: uppercase;
+  font-weight:700;
+  font-size:.85rem;
+  color: var(--accent-primary);
+  margin-bottom:.75rem;
+}
+
+.footer-links li + li{ margin-top:.3rem; }
+.footer-links a{
+  color:#111;
+  text-decoration:none;
+  transition: all .2s ease;
+}
+.footer-links a:hover{
+  color: var(--accent-primary);
+  padding-left: .15rem;
+}
+
+.text-secondary{ color: var(--text-soft) !important; }
+
+.socials .social{
+  width: 36px; height: 36px; display:inline-flex; align-items:center; justify-content:center;
+  border-radius: 10px; text-decoration:none;
+  color:#111; background: rgba(0,0,0,.04);
+  border:1px solid rgba(0,0,0,.06);
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+.socials .social:hover{
+  transform: translateY(-2px);
+  color:#fff; background: linear-gradient(135deg, var(--accent-primary), var(--accent-deep));
+}
+
+.footer-input{
+  background: rgba(255,255,255,.6);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+}
+.footer-input:focus{
+  box-shadow: 0 0 0 .25rem rgba(46,52,90,.15);
+  border-color: var(--accent-primary);
+}
+
+.footer-hr{
+  border:0; height:1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.15), transparent);
+  opacity:.8;
+}
+
+.pay-badge{
+  background: linear-gradient(135deg, rgba(46,52,90,.1), rgba(79,84,107,.1));
+  border: 1px solid rgba(0,0,0,.08);
+  color:#111; font-weight:600; letter-spacing:.2px;
+  border-radius: 10px; padding:.5rem .65rem;
+}
+
+/* Brand pill */
+.brand .brand-mark{
+  width:18px; height:18px; border-radius:6px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-deep));
+  box-shadow: 0 6px 18px rgba(46,52,90,.35);
+}
+
+@media (max-width: 992px) {
+    .navbar{
+        width: 100% !important;
+        background-color: #fff;
+        border-radius: 0px !important;
+    }
+}
+
+
